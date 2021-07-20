@@ -8,8 +8,6 @@ import (
 var proxy = "http://localhost:1081"
 var target = "original-go"
 
-var debug = true
-
 func main() {
 	os.Setenv("http_proxy", proxy)
 	os.Setenv("https_proxy", proxy)
