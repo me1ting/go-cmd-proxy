@@ -1,7 +1,13 @@
 # go-cmd-proxy
-给命令行`go`通过环境变量设置代理。
+Proxy replacement for go cmd.
 
-# 使用方式
-将原始的go文件重命名为`original-go`（Windows环境需要保留后缀名）。
+So you can use `go get`,`go install` or some go command else on a net proxy but without system proxy or command poroxy settings.
 
-将该go文件放置在原go文件所在文件夹。
+# usage
+Rename the original go file to `original-go` (Windows needs to keep the suffix).
+
+Place the replacement in the same folder.
+
+# q&a
+## How can i use a custom proxy host?
+Just edit the source code and recompile.
